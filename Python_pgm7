@@ -1,0 +1,14 @@
+s=input()
+a="aeiou"
+b={}
+max=0
+for i in s:
+    if i in a:
+        if i in b:
+            b[i]+=1
+        else:
+            b[i]=1
+        if b[i]>max:
+            max=b[i]
+            ans=i
+print(ans)
